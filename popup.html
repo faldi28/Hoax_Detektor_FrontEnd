@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoax Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <div class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L4 5V11C4 17.66 9.34 21.84 12 22C14.66 21.84 20 17.66 20 11V5L12 2ZM11 16H13V18H11V16ZM11 7H13V14H11V7Z" fill="#2ECC71"/>
+                </svg>
+                <h1>Hoax Detector</h1>
+            </div>
+            <div class="version-badge">v1.0</div>
+        </div>
+
+        <div class="content">
+            <p class="description">Klik tombol di bawah untuk menganalisis keaslian berita di halaman ini.</p>
+            
+            <div id="result" class="result-card hidden">
+                <div class="result-icon">
+                    <svg id="result-svg" width="40" height="40" viewBox="0 0 24 24"></svg>
+                </div>
+                <div class="result-content">
+                    <h3 id="result-title">Hasil Deteksi</h3>
+                    <p id="result-text">Belum ada hasil</p>
+                </div>
+                <div class="feedback-section">
+                    <p>Salah klasifikasi? Beri tahu kami!</p>
+                    <button id="feedback-btn" class="feedback-button">Saran & Masukan</button>
+                    <p id="coming-soon" class="coming-soon-text hidden">Fitur ini akan segera hadir!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button id="detect-btn" class="detect-button">
+                <span class="button-text">Analisis Halaman Ini</span>
+                <span class="button-loader">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+                    </svg>
+                </span>
+            </button>
+            <div class="powered-by">Intelligent Hoax Detection</div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
