@@ -1,7 +1,7 @@
 // Frontend/background.js
 
 // URL API Backend Anda.
-const API_ENDPOINT = "http://107.21.175.82/predict";
+const API_ENDPOINT="http://107.21.175.82/predict";
 
 // Fungsi ini akan disuntikkan ke halaman web untuk mengambil teks artikel menggunakan Readability.js
 function parseArticleWithReadability() {
